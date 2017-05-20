@@ -13,6 +13,6 @@ The triangle is constructed in the following manner:
 
 For example, the initial number in the first row is 1 (the sum of 0 and 1), whereas the numbers 1 and 3 in the third row are added to produce the number 4 in the fourth row (see image above).
 
-### Rules
+### Output
 
 Given an integer N as input, the function returns first N lines of Pascal's Triangle.
