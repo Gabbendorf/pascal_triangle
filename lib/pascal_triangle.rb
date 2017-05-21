@@ -12,9 +12,7 @@ class PascalTriangle
     line_number.times do
       new_line = []
       new_line.push(1)
-      if line.size >= 2
-        sum_pairs(line, new_line)
-      end
+      sum_pairs(line, new_line)
       new_line.push(1)
       line = new_line
     end
@@ -22,8 +20,8 @@ class PascalTriangle
   end
 
   def sum_pairs(line, new_array)
-    (0..line.size-2).each do |index|
-      new_array.push(line[index]+line[index+1])
+    if line.size >= 2
+      (0..line.size-2).each {|index| new_array.push(line[index]+line[index+1])}
     end
   end
 
