@@ -40,4 +40,10 @@ RSpec.describe PascalTriangle do
     expect(line).to eq([1,5,10,10,5,1])
   end
 
+  it "prints all lines to line 5" do
+    lines = triangle.print_lines_to(5)
+
+    expect(lines).to eq([[1],[1,1],[1,2,1],[1,3,3,1],[1,4,6,4,1],[1,5,10,10,5,1]])
+  end
+
 end
