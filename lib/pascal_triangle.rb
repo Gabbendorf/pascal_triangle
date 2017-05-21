@@ -17,7 +17,8 @@ class PascalTriangle
     new_line = []
     new_line.push(1)
     if previous_line.size >= 2
-      (0..previous_line.size-2).each {|index| new_line.push(previous_line[index] + previous_line[index+1])}
+      (0..previous_line.size-2).each {|index|
+        new_line.push(previous_line[index] + previous_line[index+1])}
     end
     new_line.push(1)
     new_line
