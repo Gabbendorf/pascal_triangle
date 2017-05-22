@@ -2,8 +2,7 @@ class PascalTriangle
 
   def print_lines_to(line_number)
     all_lines = []
-    lines_numbers = (0..line_number).map {|number| number}
-    lines_numbers.map {|number| all_lines.push(print_line(number))}
+    (0..line_number).map {|number| all_lines.push(print_line(number))}
     all_lines
   end
 
