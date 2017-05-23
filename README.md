@@ -1,6 +1,6 @@
 # Pascal's Triangle
 
-### What is it?
+## What is it?
 
 In mathematics, Pascal's triangle (named after Blaise Pascal, a famous French Mathematician and Philosopher) is a triangular array of the binomial coefficients.
 
@@ -13,6 +13,16 @@ The triangle is constructed in the following manner:
 
 For example, the initial number in the first row is 1 (the sum of 0 and 1), whereas the numbers 1 and 3 in the third row are added to produce the number 4 in the fourth row (see image above).
 
-### Rules
+## Output
 
 Given an integer N as input, the function returns first N lines of Pascal's Triangle.
+
+### How to run the tests:
+
+From main directory: `rspec spec`, to run all tests inside `spec` directory
+
+From `spec` directory: `rspec <file_name_spec.rb>`
+
+### How to include color when running the tests:
+
+To add color from the command line: `rspec spec --color`
